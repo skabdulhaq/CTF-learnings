@@ -41,6 +41,7 @@ we got a server which will manage instance for our challenge at by generating a 
 `nc blockchain.bbctf.fluxus.co.in 5001`
 
 ![](./images/instance_server.png)
+
 launch a instance and you will get 
 ``` python
 uuid = "5759cffc-c638-451e-b41b-b8a15469ad49"
@@ -49,17 +50,17 @@ privatekey = "0xa9622978b37457dc8d5bb76996c8a166bc04fe8db0907dcba98ee7d7f4009f35
 youraddress = "0x5f20EdbCAa04777a636fF9564Ea9a96bA82af5A4"
 setupcontract = "0x9C7fF8BCF007AA7041346f1c68C149b1469eA983"
 ```
-## Ananlysis
-- In `setup.sol` if you call `instance` it will return the address of the chall contract.
-- `chall.sol` has wierd behaviour frist it will check wetather checker isCorrectGuess(_guess_) is `false` and to win next step it should be `true`.
--  `msg.sender` is address of sender so definatly we have to make a exploit contract.
+## Analysis
+- In `setup.sol` if you call `instance` it will return the address of the challalange contract.
+- `chall.sol` has weird behaviour first it will check weather checker `isCorrectGuess(_guess)` is `false` and to win next step it should be `true`.
+-  `msg.sender` is address of sender so defiantly we have to make a exploit contract.
 - we have something called interface which we will get back to it later.
-## Failed steps
 ## Research
-I don't know much about solidity so i started learning how interface works.
+I don't know much about solidity so I started learning how interface works.
 [Contracts — Solidity 0.8.17 documentation (soliditylang.org)](https://docs.soliditylang.org/en/v0.8.17/contracts.html#interfaces)
-https://www.youtube.com/watch?v=tbjyc-VQaQo
-https://www.youtube.com/watch?v=hzH6fgKhSMg
+<iframe title="Interface | Solidity 0.8" src="https://www.youtube.com/embed/tbjyc-VQaQo?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
+<iframe title="Solidity Exercises 29: Contract Interaction: Interface and Import" src="https://www.youtube.com/embed/hzH6fgKhSMg?feature=oembed" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>
+
 Here is quick summary
 - You can use contract address to directly talk with the contract instead of importing or adding its code to our contact.
 - In this challenge we have to specify the address of the interface contract with `msg.sender`.
