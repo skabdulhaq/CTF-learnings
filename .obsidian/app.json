@@ -1,0 +1,9 @@
+{
+  "promptDelete": false,
+  "spellcheckDictionary": [
+    "command"
+  ],
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "CTF-writeups",
+  "newLinkFormat": "relative"
+}
