@@ -2,6 +2,8 @@
 
 ![](https://i.imgur.com/2P4JTom.png)
 
+We got second blood and only 2 teams solved it at the end. I learned so much while solving this challenge but I got deep understanding after writing this writeup.
+
 ### setup.sol
 
 ```solidity
@@ -164,5 +166,3 @@ just give some value to `guessIt` and call get the flag by connecting to server 
 
 FLAG:
 	`flag{A1l_17s_r3quirED_is_a_1iI7lE_5oliDity}`
-
-That's how we got second blood and only 2 teams solved it. I learned so much while solving this challenge but I got deep understanding after writing this writeup.
