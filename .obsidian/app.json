@@ -5,5 +5,10 @@
   ],
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "CTF-writeups",
-  "newLinkFormat": "relative"
+  "newLinkFormat": "relative",
+  "spellcheckLanguages": [
+    "en-US",
+    "en"
+  ],
+  "spellcheck": true
 }

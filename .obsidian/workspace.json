@@ -4,15 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "cf01e2208ff93594",
+        "id": "b4783ea75266160d",
         "type": "tabs",
         "children": [
           {
-            "id": "1b542134071676f1",
+            "id": "74d69c0421ebbb50",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1a17dc41c0d71df",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "CTF-writeups/BytesbanditCTF/images/instance_server.png"
+              }
             }
           }
         ]
@@ -81,6 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +112,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +134,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md"
+              }
             }
           }
         ]
@@ -139,17 +157,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "1b542134071676f1",
+  "active": "74d69c0421ebbb50",
   "lastOpenFiles": [
+    "CTF-writeups/BytesbanditCTF/images/instance_server.png",
+    "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md",
+    "CTF-writeups/BytesbanditCTF/images/instance_server 1.png",
     "Untitled.canvas",
     "CTF-writeups/Untitled.canvas",
     "Untitled 1.md",
     "Pasted image 20230205132918.png.md",
     "[SQL.md",
-    "CTF-writeups/BytesbanditCTF/blockchain-GuessTheName.md",
-    "CTF-writeups/BytesbanditCTF/images/instance_server.png",
     "CTF-writeups/BytesbanditCTF/images/attack_contract.png",
-    "CTF-writeups/BytesbanditCTF/images/setup_contract.png",
-    "CTF-writeups/BytesbanditCTF/images/chall_contract.png"
+    "CTF-writeups/BytesbanditCTF/images/setup_contract.png"
   ]
 }

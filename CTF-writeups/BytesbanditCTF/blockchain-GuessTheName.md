@@ -37,10 +37,10 @@ contract Challenge {
 }
 ```
 
-we got a server which will manage instace for our challenge at by generating a secret from `get_ticket.py` 
+we got a server which will manage instance for our challenge at by generating a secret from `get_ticket.py` 
 `nc blockchain.bbctf.fluxus.co.in 5001`
 
-![[./images/instance_server.png]]
+![][./images/instance_server.png]
 launch a instance and you will get 
 ``` python
 uuid = "5759cffc-c638-451e-b41b-b8a15469ad49"
@@ -53,7 +53,7 @@ setupcontract = "0x9C7fF8BCF007AA7041346f1c68C149b1469eA983"
 - In `setup.sol` if you call `instance` it will return the address of the chall contract.
 - `chall.sol` has wierd behaviour frist it will check wetather checker isCorrectGuess(_guess_) is `false` and to win next step it should be `true`.
 -  `msg.sender` is address of sender so definatly we have to make a exploit contract.
-- we have somthing called interface which we will get back to it later.
+- we have something called interface which we will get back to it later.
 ## Failed steps
 ## Research
 I don't know much about solidity so i started learning how interface works.
@@ -61,8 +61,8 @@ I don't know much about solidity so i started learning how interface works.
 https://www.youtube.com/watch?v=tbjyc-VQaQo
 https://www.youtube.com/watch?v=hzH6fgKhSMg
 Here is quick summary
-- You can use contract address to directly talk with the contract insted of importing or adding its code to our contact.
-- In this challange we have to specify the address of the interface contract with `msg.sender`.
+- You can use contract address to directly talk with the contract instead of importing or adding its code to our contact.
+- In this challenge we have to specify the address of the interface contract with `msg.sender`.
 
 ## Exploit planning
 
@@ -124,20 +124,20 @@ this function initaits our attack by calling `target.makeAGuess(_guess)`->`!chec
 
 ## Exploit!!!
 
-![[./images/setting_rpc.png]]
-Add ur PRC Url and ChainId
-![[./images/import_Account.png]]
+![][./images/setting_rpc.png]
+Add your PRC Url and ChainId
+![][./images/import_Account.png]
 import your account to metamask
-![[./images/got_account.png]]
+![][./images/got_account.png]
 now open Remix connect it with your wallet and account. intracct with deployed setup contract by passting its address to AtAddress input box with `setup_contract` address by opening `setup.sol`
 now you will get address of challenge.
-![[./images/setup_contract.png]]
+![][./images/setup_contract.png]
 now add Challenge contract which you can have to intract.
-![[./images/chall_contract.png]]
+![][./images/chall_contract.png]
 now lets deploy attack contract by giving address which we got from instance in setup.
-![[./images/attack_contract.png]]
-just give some value to guessIt and call get the flag by connecting to server and clicking on get flag with ur team_secret 
-![[./images/instance_server.png]]
+![][./images/attack_contract.png]
+just give some value to `guessIt` and call get the flag by connecting to server and clicking on get flag with your `team_secret` 
+![][./images/instance_server.png]
 FLAG:
 	```flag{A1l_17s_r3quirED_is_a_1iI7lE_5oliDity}```
-That's how we got second blood and only 2 teams solved it.i learned so much while solving this challenge but i got deep understanding after writing this writeup.
+That's how we got second blood and only 2 teams solved it. I learned so much while solving this challenge but I got deep understanding after writing this writeup.
